@@ -187,62 +187,129 @@
         </section>
 
         <!-- About / Services Section -->
-        <section id="sobre" class="py-20 bg-white relative">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="sobre" class="py-20 bg-white relative overflow-hidden">
 
-                <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
-                    <h2 class="text-3xl font-serif font-bold text-gray-900 sm:text-4xl">Sua imagem fala antes de você.
-                        <br>O que ela está dizendo?
+            <!-- Subtle background decoration -->
+            <div class="absolute top-0 right-0 w-96 h-96 rounded-full bg-brand/10 blur-3xl translate-x-1/3 -translate-y-1/3 pointer-events-none"></div>
+
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+                <!-- ── BLOCO PRINCIPAL ── -->
+                <div class="text-center mb-14 fade-in-up">
+                    <span class="text-brand-accent font-semibold tracking-wider uppercase text-sm mb-4 block">Sobre Mim</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-gray-900 leading-tight mb-4">
+                        Você não precisa de mais roupas.<br>
+                        <span class="italic text-brand-accent">Precisa de mais clareza.</span>
                     </h2>
-                    <div class="mt-4 w-24 h-1 bg-brand-accent mx-auto rounded-full"></div>
-                    <p class="mt-6 text-lg text-gray-600">
-                        Como Coach de Estilo, meu objetivo não é te impor regras de moda, mas sim te ajudar a descobrir
-                        ferramentas para expressar sua personalidade com autoconfiança, praticidade e elegância no dia a
-                        dia.
+                    <div class="w-20 h-1 bg-brand-accent mx-auto rounded-full mb-8"></div>
+                    <p class="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
+                        A consultoria de imagem não serve para mudar quem você é. Ela serve para <strong class="text-gray-800">revelar sua melhor versão</strong>, fazendo com que cada compra, cada combinação e cada escolha tenham propósito.
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <!-- ── CITAÇÃO PESSOAL DA JANA ── -->
+                <div class="relative bg-brand-light rounded-2xl px-8 py-10 mb-16 fade-in-up border border-brand/20">
+                    <!-- Aspas decorativas -->
+                    <span class="absolute -top-5 left-8 text-7xl leading-none text-brand-accent/20 font-serif select-none">"</span>
+                    <p class="text-gray-700 italic leading-relaxed text-base sm:text-lg relative z-10 mb-4">
+                        Consultoria de imagem para mulheres que desejam se vestir com mais intenção, segurança e autenticidade — sem compras por impulso e sem um guarda-roupa cheio de arrependimentos.
+                    </p>
+                    <div class="w-12 h-0.5 bg-brand-accent/40 mb-4"></div>
+                    <p class="text-gray-600 leading-relaxed text-sm sm:text-base relative z-10">
+                        Durante muito tempo eu acreditei que comprar mais era a solução. Hoje sei que a transformação não começa na loja. Ela começa quando entendemos quem somos, como queremos ser percebidas e como usar a imagem a nosso favor.
+                    </p>
+                    <p class="mt-6 text-brand-accent font-semibold text-sm tracking-wide">— Janaína Santos</p>
+                </div>
 
-                    <!-- Service 1 — Coloração Pessoal -->
-                    <div
-                        class="p-8 rounded-2xl bg-brand-light border border-brand/20 hover:shadow-xl transition-shadow duration-300 fade-in-up delay-100">
-                        <div
-                            class="w-16 h-16 mx-auto bg-brand-accent/10 text-brand-accent rounded-full flex items-center justify-center mb-6">
-                            <i class="fas fa-palette text-2xl"></i>
+                                <!-- ── SERVIÇOS ── -->
+                <div class="fade-in-up">
+                    <p class="text-center text-gray-500 italic text-base mb-10">Cada etapa revela uma parte da sua imagem.</p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+
+                        <!-- Serviço 1 -->
+                        <div class="p-6 rounded-2xl bg-brand-light border border-brand/20 hover:shadow-xl transition-shadow duration-300">
+                            <div class="w-14 h-14 mx-auto bg-brand-accent/10 text-brand-accent rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-palette text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 text-base mb-2">Coloração Pessoal</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Descubra as cores de cabelo, maquiagem, acessórios e roupas que valorizam e realçam sua beleza natural!</p>
                         </div>
-                        <h3 class="text-xl font-bold mb-3">Coloração Pessoal</h3>
-                        <p class="text-gray-600 text-sm">Descubra a paleta de cores que ilumina seu rosto, suaviza
-                            imperfeições e transmite a mensagem certa.</p>
-                    </div>
 
-                    <!-- Service 2 — Revitalização de Closet -->
-                    <div
-                        class="p-8 rounded-2xl bg-brand-light border border-brand/20 hover:shadow-xl transition-shadow duration-300 fade-in-up delay-200">
-                        <div
-                            class="w-16 h-16 mx-auto bg-brand-accent/10 text-brand-accent rounded-full flex items-center justify-center mb-6">
-                            <i class="fas fa-tshirt text-2xl"></i>
+                        <!-- Serviço 2 -->
+                        <div class="p-6 rounded-2xl bg-brand-light border border-brand/20 hover:shadow-xl transition-shadow duration-300">
+                            <div class="w-14 h-14 mx-auto bg-brand-accent/10 text-brand-accent rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-sparkles text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 text-base mb-2">Visagismo</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Entenda como o corte de cabelo, formatos da maquiagem, acessórios e linhas do rosto comunicam sua personalidade.</p>
                         </div>
-                        <h3 class="text-xl font-bold mb-3">Revitalização de Closet</h3>
-                        <p class="text-gray-600 text-sm">Multiplique seus looks usando o que você já tem. Organização,
-                            triagem e montagem de novas propostas.</p>
-                    </div>
 
-                    <!-- Service 3 — Personal Shopper -->
-                    <div
-                        class="p-8 rounded-2xl bg-brand-light border border-brand/20 hover:shadow-xl transition-shadow duration-300 fade-in-up delay-300">
-                        <div
-                            class="w-16 h-16 mx-auto bg-brand-accent/10 text-brand-accent rounded-full flex items-center justify-center mb-6">
-                            <i class="fas fa-shopping-bag text-2xl"></i>
+                        <!-- Serviço 3 -->
+                        <div class="p-6 rounded-2xl bg-brand-light border border-brand/20 hover:shadow-xl transition-shadow duration-300">
+                            <div class="w-14 h-14 mx-auto bg-brand-accent/10 text-brand-accent rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-female text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 text-base mb-2">Análise de Biotipo</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Aprenda a valorizar seu corpo com as peças certas, proporções, modelagens e caimentos que funcionam para você.</p>
                         </div>
-                        <h3 class="text-xl font-bold mb-3">Personal Shopper</h3>
-                        <p class="text-gray-600 text-sm">Compras assertivas e guiadas, focadas no seu biotipo, estilo de
-                            vida e orçamento. Sem desperdícios.</p>
-                    </div>
 
+                        <!-- Serviço 4 -->
+                        <div class="p-6 rounded-2xl bg-brand-light border border-brand/20 hover:shadow-xl transition-shadow duration-300">
+                            <div class="w-14 h-14 mx-auto bg-brand-accent/10 text-brand-accent rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-gem text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 text-base mb-2">Diagnóstico de Estilo</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Descubra quais estilos representam você! Facilite suas escolhas, compras e combinações!</p>
+                        </div>
+
+                        <!-- Serviço 5 -->
+                        <div class="p-6 rounded-2xl bg-brand-light border border-brand/20 hover:shadow-xl transition-shadow duration-300">
+                            <div class="w-14 h-14 mx-auto bg-brand-accent/10 text-brand-accent rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-tshirt text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 text-base mb-2">Análise de Guarda-Roupa</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Transforme o que você já tem em possibilidades reais de mais looks, eliminando excessos.</p>
+                        </div>
+
+                        <!-- Serviço 6 -->
+                        <div class="p-6 rounded-2xl bg-brand-light border border-brand/20 hover:shadow-xl transition-shadow duration-300">
+                            <div class="w-14 h-14 mx-auto bg-brand-accent/10 text-brand-accent rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-shopping-bag text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 text-base mb-2">Personal Shopper</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Compre menos, compre melhor e monte um guarda-roupa estratégico.</p>
+                        </div>
+
+                        <!-- Serviço 7 -->
+                        <div class="p-6 rounded-2xl bg-brand-light border border-brand/20 hover:shadow-xl transition-shadow duration-300">
+                            <div class="w-14 h-14 mx-auto bg-brand-accent/10 text-brand-accent rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-star text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 text-base mb-2">Personal Styling</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Looks pensados para ocasiões especiais, trabalho, viagens ou para elevar sua imagem no dia a dia.</p>
+                        </div>
+
+                        <!-- Serviço 8 -->
+                        <div class="p-6 rounded-2xl bg-brand-light border border-brand/20 hover:shadow-xl transition-shadow duration-300">
+                            <div class="w-14 h-14 mx-auto bg-brand-accent/10 text-brand-accent rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-shoe-prints text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 text-base mb-2">Montagem de Looks</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Aprenda novas combinações utilizando as peças que você já possui.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ── FECHAMENTO ── -->
+                <div class="mt-12 text-center fade-in-up">
+                    <p class="text-gray-800 font-medium text-lg mb-2">Sua imagem já comunica alguma coisa. A pergunta é:</p>
+                    <p class="text-brand-accent font-serif font-bold text-2xl italic mb-6">Ela está comunicando aquilo que você deseja?</p>
                 </div>
             </div>
         </section>
+
 
         <!-- ======================================================
              DEPOIMENTOS
@@ -370,23 +437,22 @@
                         <div class="w-16 h-1 bg-brand-accent rounded-full mt-4 mx-auto"></div>
                     </div>
 
-                    <!-- Hero photo — Jana com leque (full width, portrait) -->
+                    <!-- Interior photo — PRIMEIRO no mobile, aspecto nativo 3:4 = sem corte -->
                     <div class="relative rounded-2xl overflow-hidden shadow-xl aspect-[3/4] mb-4">
+                        <img src="assets/images/estudio-02.jpeg"
+                             alt="Interior do estúdio Janaína Santos com poltronas e espelho"
+                             class="w-full h-full object-cover object-center"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+
+                    <!-- Jana com leque — abaixo do estúdio -->
+                    <div class="relative rounded-2xl overflow-hidden shadow-lg aspect-[3/4] mb-6">
                         <img src="assets/images/estudio-01.jpeg"
                              alt="Janaína Santos no estúdio apresentando leque de coloração pessoal"
                              class="w-full h-full object-cover object-center"
                              loading="lazy">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                    </div>
-
-                    <!-- Interior photo — horizontal card -->
-                    <div class="relative rounded-2xl overflow-hidden shadow-lg aspect-[4/3] mb-6">
-                        <img src="assets/images/estudio-02.jpeg"
-                             alt="Interior do estúdio Janaína Santos com poltronas e espelho"
-                             class="w-full h-full object-cover"
-                             style="object-position: center 55%;"
-                             loading="lazy">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     </div>
 
                     <!-- Inline badge -->
@@ -407,13 +473,6 @@
                     <p class="text-gray-600 leading-relaxed mb-8">
                         Cada detalhe do ambiente reflete a essência da consultoria: elegância, cuidado e atenção à identidade de cada cliente.
                     </p>
-                    <a href="https://wa.me/5516981795407?text=Ol%C3%A1%20Jana,%20gostaria%20de%20agendar%20uma%20visita%20ao%20seu%20est%C3%BAdio!"
-                       target="_blank"
-                       class="w-full inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-brand-accent text-white font-medium hover:bg-brand-dark transition-all duration-300 shadow-md">
-                        <i class="fab fa-whatsapp text-lg"></i>
-                        Agendar uma visita
-                    </a>
-
                 </div>
 
                 <!-- ===== DESKTOP LAYOUT (hidden on mobile) ===== -->
@@ -432,12 +491,6 @@
                         <p class="text-gray-600 leading-relaxed mb-10">
                             Cada detalhe do ambiente reflete a essência da consultoria: elegância, cuidado e atenção à identidade de cada cliente.
                         </p>
-                        <a href="https://wa.me/5516981795407?text=Ol%C3%A1%20Jana,%20gostaria%20de%20agendar%20uma%20visita%20ao%20seu%20est%C3%BAdio!"
-                           target="_blank"
-                           class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-brand-accent text-white font-medium text-sm hover:bg-brand-dark transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
-                            <i class="fab fa-whatsapp text-lg"></i>
-                            Agendar uma visita
-                        </a>
                     </div>
 
                     <!-- Asymmetric photo gallery -->
