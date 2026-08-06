@@ -103,18 +103,13 @@
         <!-- Mobile Menu Panel -->
         <div class="md:hidden hidden bg-white border-b border-gray-200" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#inicio"
+                <a href="#inicio" onclick="document.getElementById('mobile-menu').classList.add('hidden')"
                     class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-brand-accent hover:bg-gray-50">Início</a>
-                <a href="#sobre"
+                <a href="#sobre" onclick="document.getElementById('mobile-menu').classList.add('hidden')"
                     class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-brand-accent hover:bg-gray-50">Sobre
                     Mim</a>
-                <a href="#depoimentos"
+                <a href="#depoimentos" onclick="document.getElementById('mobile-menu').classList.add('hidden')"
                     class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-brand-accent hover:bg-gray-50">Depoimentos</a>
-                <a href="https://wa.me/5516981795407?text=Olá%20Jana,%20gostaria%20de%20saber%20mais%20sobre%20sua%20consultoria!"
-                    target="_blank"
-                    class="block w-full text-center mt-4 px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-text hover:bg-brand-accent transition-colors">
-                    <i class="fab fa-whatsapp mr-2"></i> Falar no WhatsApp
-                </a>
             </div>
         </div>
     </header>
