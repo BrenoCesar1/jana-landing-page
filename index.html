@@ -72,7 +72,8 @@
                     <a href="#inicio"
                         class="text-gray-600 hover:text-brand-accent transition-colors duration-200 font-medium">Início</a>
                     <a href="#sobre"
-                        class="text-gray-600 hover:text-brand-accent transition-colors duration-200 font-medium">Sobre Mim</a>
+                        class="text-gray-600 hover:text-brand-accent transition-colors duration-200 font-medium">Sobre
+                        Mim</a>
                     <a href="#depoimentos"
                         class="text-gray-600 hover:text-brand-accent transition-colors duration-200 font-medium">Depoimentos</a>
                 </nav>
@@ -105,7 +106,8 @@
                 <a href="#inicio"
                     class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-brand-accent hover:bg-gray-50">Início</a>
                 <a href="#sobre"
-                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-brand-accent hover:bg-gray-50">Sobre Mim</a>
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-brand-accent hover:bg-gray-50">Sobre
+                    Mim</a>
                 <a href="#depoimentos"
                     class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-brand-accent hover:bg-gray-50">Depoimentos</a>
                 <a href="https://wa.me/5516981795407?text=Olá%20Jana,%20gostaria%20de%20saber%20mais%20sobre%20sua%20consultoria!"
@@ -129,9 +131,6 @@
 
                     <!-- Text Content -->
                     <div class="lg:col-span-6 lg:pr-8 text-center lg:text-left fade-in-up">
-                        <span
-                            class="text-brand-dark font-semibold tracking-wider uppercase text-sm mb-4 block">Consultoria
-                            de Imagem &amp; Estilo</span>
                         <h1
                             class="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-gray-900 mb-6 leading-tight">
                             Expresse sua essência <br class="hidden lg:block" /> através do seu <span
@@ -193,7 +192,8 @@
 
                 <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
                     <h2 class="text-3xl font-serif font-bold text-gray-900 sm:text-4xl">Sua imagem fala antes de você.
-                        <br>O que ela está dizendo?</h2>
+                        <br>O que ela está dizendo?
+                    </h2>
                     <div class="mt-4 w-24 h-1 bg-brand-accent mx-auto rounded-full"></div>
                     <p class="mt-6 text-lg text-gray-600">
                         Como Coach de Estilo, meu objetivo não é te impor regras de moda, mas sim te ajudar a descobrir
@@ -355,16 +355,74 @@
         <!-- ======================================================
              ESTÚDIO
         ====================================================== -->
-        <section id="estudio" class="py-20 bg-brand-light overflow-hidden">
+        <section id="estudio" class="py-16 lg:py-20 bg-brand-light overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <!-- ===== MOBILE LAYOUT (hidden on lg+) ===== -->
+                <div class="lg:hidden fade-in-up">
+
+                    <!-- Label + Title -->
+                    <div class="text-center mb-8">
+                        <span class="text-brand-accent font-semibold tracking-wider uppercase text-sm mb-2 block">Nosso Espaço</span>
+                        <h2 class="text-3xl font-serif font-bold text-gray-900 leading-tight">
+                            Um ambiente pensado para a sua <span class="italic text-brand-accent">transformação</span>
+                        </h2>
+                        <div class="w-16 h-1 bg-brand-accent rounded-full mt-4 mx-auto"></div>
+                    </div>
+
+                    <!-- Hero photo — Jana com leque (full width, portrait) -->
+                    <div class="relative rounded-2xl overflow-hidden shadow-xl aspect-[3/4] mb-4">
+                        <img src="assets/images/estudio-01.jpeg"
+                             alt="Janaína Santos no estúdio apresentando leque de coloração pessoal"
+                             class="w-full h-full object-cover object-center"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                    </div>
+
+                    <!-- Interior photo — horizontal card -->
+                    <div class="relative rounded-2xl overflow-hidden shadow-lg aspect-video mb-6">
+                        <img src="assets/images/estudio-02.jpeg"
+                             alt="Interior do estúdio Janaína Santos com poltronas e espelho"
+                             class="w-full h-full object-cover object-top"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+
+                    <!-- Inline badge -->
+                    <div class="flex items-center gap-3 bg-white rounded-xl shadow-md px-4 py-3 border border-brand/30 w-fit mb-8">
+                        <div class="w-9 h-9 rounded-full bg-brand-accent/10 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-map-marker-alt text-brand-accent text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-gray-800">Estúdio Físico</p>
+                            <p class="text-xs text-gray-500">Consultoria presencial</p>
+                        </div>
+                    </div>
+
+                    <!-- Description + CTA -->
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        O estúdio da Janaína Santos foi criado para que você se sinta acolhida e à vontade desde o primeiro momento. Um espaço exclusivo, sofisticado e cheio de personalidade.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mb-8">
+                        Cada detalhe do ambiente reflete a essência da consultoria: elegância, cuidado e atenção à identidade de cada cliente.
+                    </p>
+                    <a href="https://wa.me/5516981795407?text=Ol%C3%A1%20Jana,%20gostaria%20de%20agendar%20uma%20visita%20ao%20seu%20est%C3%BAdio!"
+                       target="_blank"
+                       class="w-full inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-brand-accent text-white font-medium hover:bg-brand-dark transition-all duration-300 shadow-md">
+                        <i class="fab fa-whatsapp text-lg"></i>
+                        Agendar uma visita
+                    </a>
+
+                </div>
+
+                <!-- ===== DESKTOP LAYOUT (hidden on mobile) ===== -->
+                <div class="hidden lg:grid lg:grid-cols-2 lg:gap-16 items-center">
 
                     <!-- Text side -->
-                    <div class="mb-12 lg:mb-0 fade-in-up">
+                    <div class="fade-in-up">
                         <span class="text-brand-accent font-semibold tracking-wider uppercase text-sm mb-3 block">Nosso Espaço</span>
-                        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-gray-900 mb-6 leading-tight">
-                            Um ambiente pensado <br class="hidden lg:block">para a sua <span class="italic text-brand-accent">transformação</span>
+                        <h2 class="text-4xl font-serif font-bold text-gray-900 mb-6 leading-tight">
+                            Um ambiente pensado <br>para a sua <span class="italic text-brand-accent">transformação</span>
                         </h2>
                         <div class="w-16 h-1 bg-brand-accent rounded-full mb-8"></div>
                         <p class="text-gray-600 text-lg leading-relaxed mb-6">
@@ -373,7 +431,7 @@
                         <p class="text-gray-600 leading-relaxed mb-10">
                             Cada detalhe do ambiente reflete a essência da consultoria: elegância, cuidado e atenção à identidade de cada cliente.
                         </p>
-                        <a href="https://wa.me/5516981795407?text=Olá%20Jana,%20gostaria%20de%20agendar%20uma%20visita%20ao%20seu%20estúdio!"
+                        <a href="https://wa.me/5516981795407?text=Ol%C3%A1%20Jana,%20gostaria%20de%20agendar%20uma%20visita%20ao%20seu%20est%C3%BAdio!"
                            target="_blank"
                            class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-brand-accent text-white font-medium text-sm hover:bg-brand-dark transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                             <i class="fab fa-whatsapp text-lg"></i>
@@ -384,18 +442,13 @@
                     <!-- Asymmetric photo gallery -->
                     <div class="relative fade-in-up delay-200">
                         <div class="grid grid-cols-2 gap-4 items-end">
-
-                            <!-- Tall left photo — Jana com leque de cores -->
                             <div class="relative rounded-2xl overflow-hidden shadow-xl aspect-[3/4]">
                                 <img src="assets/images/estudio-01.jpeg"
                                      alt="Janaína Santos no estúdio apresentando leque de coloração pessoal"
                                      class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700"
                                      loading="lazy">
-                                <!-- Subtle gradient overlay -->
                                 <div class="absolute inset-0 bg-gradient-to-t from-brand-accent/20 to-transparent"></div>
                             </div>
-
-                            <!-- Shorter right photo — interior do estúdio -->
                             <div class="relative rounded-2xl overflow-hidden shadow-xl aspect-[3/3.5] mb-8">
                                 <img src="assets/images/estudio-02.jpeg"
                                      alt="Interior do estúdio Janaína Santos com poltronas e espelho"
@@ -403,10 +456,8 @@
                                      loading="lazy">
                                 <div class="absolute inset-0 bg-gradient-to-t from-brand-accent/20 to-transparent"></div>
                             </div>
-
                         </div>
-
-                        <!-- Floating detail card -->
+                        <!-- Floating badge — desktop only -->
                         <div class="absolute -bottom-4 left-4 bg-white/90 backdrop-blur-md rounded-xl shadow-lg px-5 py-3 border border-brand/30 flex items-center gap-3">
                             <div class="w-10 h-10 rounded-full bg-brand-accent/10 flex items-center justify-center flex-shrink-0">
                                 <i class="fas fa-map-marker-alt text-brand-accent text-sm"></i>
@@ -416,8 +467,8 @@
                                 <p class="text-xs text-gray-500">Consultoria presencial</p>
                             </div>
                         </div>
-
                     </div>
+
                 </div>
 
             </div>
