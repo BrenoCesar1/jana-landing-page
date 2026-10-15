@@ -56,6 +56,7 @@
     <header
         class="fixed w-full top-0 z-50 bg-brand-light/90 backdrop-blur-sm border-b border-brand/30 transition-all duration-300"
         id="navbar">
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-24">
 
@@ -68,9 +69,14 @@
                 </div>
 
                 <!-- Desktop Menu -->
-                <nav class="hidden md:flex space-x-8">
+                <nav class="hidden md:flex space-x-8 items-center">
                     <a href="#inicio"
                         class="text-gray-600 hover:text-brand-accent transition-colors duration-200 font-medium">Início</a>
+                    <a href="#ebook" id="nav-ebook-link"
+                        class="text-brand-accent font-semibold flex items-center gap-1.5 hover:opacity-80 transition-opacity">
+                        <i class="fas fa-book-open text-xs"></i> E-book
+                        <span class="bg-brand-accent/10 text-brand-accent text-[10px] px-1.5 py-0.5 rounded font-bold">Novo</span>
+                    </a>
                     <a href="#sobre"
                         class="text-gray-600 hover:text-brand-accent transition-colors duration-200 font-medium">Sobre
                         Mim</a>
@@ -105,6 +111,11 @@
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#inicio" onclick="document.getElementById('mobile-menu').classList.add('hidden')"
                     class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-brand-accent hover:bg-gray-50">Início</a>
+                <a href="#ebook" id="mobile-nav-ebook-link" onclick="document.getElementById('mobile-menu').classList.add('hidden')"
+                    class="block px-3 py-2 rounded-md text-base font-semibold text-brand-accent hover:bg-gray-50 flex items-center justify-between">
+                    <span><i class="fas fa-book-open mr-2 text-xs"></i> E-book Guia de Estilo</span>
+                    <span class="bg-brand-accent/10 text-brand-accent text-xs px-2 py-0.5 rounded font-bold">Novo</span>
+                </a>
                 <a href="#sobre" onclick="document.getElementById('mobile-menu').classList.add('hidden')"
                     class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-brand-accent hover:bg-gray-50">Sobre
                     Mim</a>
@@ -140,6 +151,13 @@
                                 class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-full text-white bg-brand-text hover:bg-brand-accent transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                                 <i class="fab fa-whatsapp mr-2 text-xl"></i>
                                 Quero transformar minha imagem !
+                            </a>
+
+                            <!-- Botão Secundário E-book -->
+                            <a href="#ebook" id="hero-ebook-btn"
+                                class="inline-flex items-center justify-center px-7 py-4 border-2 border-brand-accent text-base font-semibold rounded-full text-brand-accent bg-white/90 hover:bg-brand-accent hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1">
+                                <i class="fas fa-book-open mr-2 text-lg"></i>
+                                Conhecer E-book
                             </a>
                         </div>
                         
@@ -197,6 +215,110 @@
                         </div>
                     </div>
 
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================
+             SEÇÃO EXCLUSIVA DE LANÇAMENTO DO E-BOOK (Opção 2)
+        ====================================================== -->
+        <section id="ebook" class="py-16 sm:py-20 bg-gradient-to-b from-brand-light via-[#f7f1e8] to-brand-light relative overflow-hidden border-y border-brand/20">
+            <!-- Background glow -->
+            <div class="absolute top-1/2 left-0 w-80 h-80 rounded-full bg-brand-accent/10 blur-3xl -translate-y-1/2 pointer-events-none"></div>
+            <div class="absolute top-1/3 right-0 w-96 h-96 rounded-full bg-brand/30 blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="bg-white/95 backdrop-blur-md rounded-3xl p-8 sm:p-12 shadow-2xl border border-brand/30">
+                    <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
+
+                        <!-- Coluna 1: Mockup 3D do E-book em Puro CSS -->
+                        <div class="w-full lg:w-5/12 flex justify-center py-4">
+                            <div class="book-mockup-wrapper">
+                                <div class="book-mockup p-6 flex flex-col justify-between text-white select-none">
+                                    <div>
+                                        <div class="flex justify-between items-center mb-6">
+                                            <span class="text-[9px] uppercase tracking-widest text-[#e6d5c3] font-semibold border-b border-[#e6d5c3]/40 pb-0.5">Edição Especial</span>
+                                            <i class="fas fa-feather-alt text-[#e6d5c3] text-xs"></i>
+                                        </div>
+                                        <p class="text-[11px] uppercase tracking-wider text-[#e6d5c3]/90 font-medium mb-1">Guia Prático</p>
+                                        <h4 class="font-serif text-xl sm:text-2xl font-bold leading-tight text-white mb-2">
+                                            Vestir Sua Essência
+                                        </h4>
+                                        <div class="w-8 h-0.5 bg-[#e6d5c3] mb-3"></div>
+                                        <p class="text-[11px] text-[#fdfbf7]/80 leading-relaxed font-light">
+                                            Como montar looks com propósito, clareza e sem arrependimentos.
+                                        </p>
+                                    </div>
+                                    <div class="pt-4 border-t border-white/20 flex justify-between items-end">
+                                        <div>
+                                            <p class="text-[9px] text-[#e6d5c3] uppercase tracking-wider">Autora</p>
+                                            <p class="font-serif text-xs font-semibold text-white">Janaína Santos</p>
+                                        </div>
+                                        <span class="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-[10px] text-[#e6d5c3]">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Coluna 2: Informações de Venda & WhatsApp -->
+                        <div class="w-full lg:w-7/12 text-center lg:text-left">
+                            <div class="inline-flex items-center gap-2 bg-brand-accent/10 text-brand-accent px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase mb-3">
+                                <span class="w-2 h-2 rounded-full bg-brand-accent animate-ping"></span>
+                                Lançamento Exclusivo
+                            </div>
+                            
+                            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-gray-900 leading-tight mb-4">
+                                Um guia direto ao ponto para <br class="hidden sm:block">
+                                <span class="italic text-brand-accent">descomplicar seu estilo</span> diário.
+                            </h2>
+
+                            <p class="text-gray-600 text-base sm:text-lg leading-relaxed mb-6">
+                                Criei este material para você que quer começar a transformar sua imagem agora mesmo, 
+                                aprendendo combinações práticas com o que já tem no guarda-roupa e sem regras engessadas.
+                            </p>
+
+                            <!-- Benefícios em bullets -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8 text-left">
+                                <div class="flex items-start gap-3 bg-brand-light p-3 rounded-xl border border-brand/20">
+                                    <div class="text-brand-accent mt-0.5"><i class="fas fa-check-circle"></i></div>
+                                    <span class="text-sm text-gray-700 font-medium">Multiplique seus looks existentes</span>
+                                </div>
+                                <div class="flex items-start gap-3 bg-brand-light p-3 rounded-xl border border-brand/20">
+                                    <div class="text-brand-accent mt-0.5"><i class="fas fa-check-circle"></i></div>
+                                    <span class="text-sm text-gray-700 font-medium">Economize evitando compras por impulso</span>
+                                </div>
+                                <div class="flex items-start gap-3 bg-brand-light p-3 rounded-xl border border-brand/20">
+                                    <div class="text-brand-accent mt-0.5"><i class="fas fa-check-circle"></i></div>
+                                    <span class="text-sm text-gray-700 font-medium">Dicas práticas de cores & combinações</span>
+                                </div>
+                                <div class="flex items-start gap-3 bg-brand-light p-3 rounded-xl border border-brand/20">
+                                    <div class="text-brand-accent mt-0.5"><i class="fas fa-check-circle"></i></div>
+                                    <span class="text-sm text-gray-700 font-medium">Formato digital PDF imediato</span>
+                                </div>
+                            </div>
+
+                            <!-- Preço + CTA WhatsApp -->
+                            <div class="pt-4 border-t border-gray-100 flex flex-col sm:flex-row items-center sm:items-baseline gap-4 sm:gap-6 justify-center lg:justify-start">
+                                <div>
+                                    <span class="text-xs text-gray-400 uppercase tracking-wider block">Condição de Lançamento</span>
+                                    <span class="text-2xl sm:text-3xl font-serif font-bold text-brand-accent">Consulte via Pix</span>
+                                </div>
+
+                                <a href="https://wa.me/5516981795407?text=Olá%20Jana!%20Vi%20o%20lançamento%20do%20seu%20Ebook%20no%20site%20e%20quero%20garantir%20o%20meu%20exemplar!"
+                                    target="_blank"
+                                    class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-semibold rounded-full text-white bg-brand-accent hover:bg-brand-dark transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                                    <i class="fab fa-whatsapp mr-2 text-2xl text-[#25d366]"></i>
+                                    Pedir meu E-book no WhatsApp
+                                </a>
+                            </div>
+                            <p class="text-xs text-gray-400 mt-3 text-center lg:text-left">
+                                <i class="fas fa-shield-alt mr-1"></i> Atendimento pessoal e envio imediato do PDF após confirmação do Pix.
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
